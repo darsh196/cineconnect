@@ -1,0 +1,432 @@
+body{
+	font-family: Tahoma;
+  	background-image: url("images/cinema.jpg");
+  	background-repeat: no-repeat;
+  	/* Background image is centered vertically and horizontally at all times */
+	background-position: center center;
+
+/* Background image doesn't tile */
+	background-repeat: no-repeat;
+
+/* Background image is fixed in the viewport so that it doesn't move when
+the content's height is greater than the image's height */
+	background-attachment: fixed;
+
+/* This is what makes the background image rescale based
+on the container's size */
+	background-size: cover;
+
+}
+
+/*Nav bar styling*/
+
+.topnav {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    font-family: Tahoma;
+    padding:30px;
+    }
+
+/*Nav bar links styling and effects on hover*/
+    
+.topnav a {
+    color: white;
+    text-align: center;
+    padding: 10px 70px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+/*image layout using grid*/
+
+.image-grid img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+    /* Other hover effects (e.g., box-shadow, border, brightness) */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 columns in larger screens */
+    grid-gap:100px;
+    margin:auto;
+}
+
+.image-grid img {
+	transition: transform 0.3s ease; 
+    max-width: 80%;
+    margin:auto;
+}
+
+.image-container {
+    position: relative;
+    /* Add any additional styling for the image containers */
+}
+
+.image-container img {
+    width: 70%; /* Adjust as needed */
+    display: block;
+}
+
+/*styling the intro and main logo*/
+
+.intro{
+	width:100%;
+	margin:auto;
+	color:red;
+    padding-bottom: 20px;
+}
+
+.logo-header {
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+  }
+
+/* Styling for the signup form container */
+.signup-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* Styling for the h1 and h2 elements within the signup form + hover effects */
+.signup-form h1{
+    color:#a80000;
+    font-size: 20px;
+}
+
+.signup-form h2{
+    color:#FFB748;
+    font-size: 12px;
+}
+
+.signup-form a:hover{
+    color:red;
+}
+/* Styling for text and password input fields within the signup form */
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="tel"],
+.signup-form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* Styling for the submit button within the signup form + hover effects */
+.signup-form input[type="submit"] {
+    width: 100%;
+    background-color: #a80000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-form input[type="submit"]:hover {
+    background-color: #FFB748;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color:grey;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* Styling for the h1 and h2 elements within the login form + hover effects on button */
+.login-form h1{
+    color:#a80000;
+}
+
+.login-form h2{
+    color:#FFB748;
+}
+
+.login-form a:hover{
+    color:red;
+}
+/* Styling for text and password input fields within the login form */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styling for the submit button within the login form + hover effects */
+.login-form input[type="submit"] {
+    width: 100%;
+    background-color: #a80000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #FFB748;
+}
+
+#searchInput {
+    padding: 10px;
+    margin:auto;
+    width: 500px;
+}
+
+button {
+    background-color: #a80000; /* Blue background */
+    color: white; /* White text */
+    padding: 8px 15px; /* Padding around the text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to a pointer to indicate it's clickable */
+    transition: background-color 0.1s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #FFB748; /* yellow on hover */
+}
+
+/*review container styling + text, headers and paragraphs*/
+.reviews-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-container h2 {
+    color: #a80000;
+    margin-bottom: 20px;
+}
+
+.reviews-container p1 {
+    display: block; /* Ensures p1 behaves like a paragraph */
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Ensure text is centered within the review containers */
+.text-center {
+    text-align: center;
+}
+
+/*forum page styling*/
+
+.forum-container {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.forum-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#a80000;
+}
+
+.thread {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.post {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.post h3 {
+    margin-top: 0;
+    color: #ff9900;
+}
+
+.post p {
+    font-size: 16px;
+}
+
+/* Additional CSS for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+h1{
+    color:#a80000;
+    text-align: center;
+}
+
+/* Modal styles (similar to the comment modal) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/*styling for profile page*/
+
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.bio h3 {
+    margin-top: 0;
+    color: #a80000;
+}
+
+.bio p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.bio p strong {
+    color: #333;
+}
+
+/*New thread functionality for forums page*/
+
+.new-thread-btn {
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #a80000; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-thread-btn:hover {
+    background-color:#FFB748;
+}
